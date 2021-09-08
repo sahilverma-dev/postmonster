@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./assets/images/postman-icon.svg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/prism.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>PostMonster</title>
+</head>
+
+<body>
+    <div class="container-fluid  p-0 ">
+        <header class=" header d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3
+        px-2 mb-2 border-bottom bg-dark ">
+            <a href=" /" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img src="./assets/images/postman-icon.svg" class="nav-logo" alt="PostMonster Logo">
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="#" class="nav-link px-2 link-light">About</a></li>
+                <li><a href="#" class="nav-link px-2 link-light">Contact Me</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <a href="https://github.com/theviralboy/postmonster" target="_blank"
+                    class="btn btn-outline-secondary me-2 text-white">
+                    Get Repo <i class="fab fa-github" style="margin-left: 10px;"></i>
+                </a>
+                <!-- <button type="button" class="btn btn-primary">Sign-up</button> -->
+            </div>
+        </header>
+    </div>
+
+    <div class="container p-2 border rounded main-container">
+        <div class="alert alert-danger alert-box p-2 px-3"></div>
+        <form class="postmonter-from">
+            <div class="input-group mb-2">
+                <select class="form-select flex-grow-0 w-auto">
+                    <option value="GET" selected="">GET</option>
+                    <option value="POST">POST</option>
+                    <!-- <option value="PUT">PUT</option>
+                    <option value="PATCH">PATCH</option>
+                    <option value="DELETE">DELETE</option> -->
+                </select>
+                <input class="form-control url" type="text" placeholder="https://example.com">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-paper-plane"></i>
+                </button>
+
+            </div>
+        </form>
+
+        <!-- Nav tabs -->
+        <div class="params-and-json border rounded p-2 mb-2">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="params-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Params</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="json-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                        role="tab" aria-controls="profile" aria-selected="false">JSON</button>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active border p-2" style="border-top: 0 !important;" id="home" role="tabpanel"
+                    aria-labelledby="params-tab">
+                    <div class="key-params-container">
+                        <div class="key-params">
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control rounded" placeholder="Enter the Key 1">
+                                <input type="text" class="form-control rounded" placeholder="Enter the Value 1">
+                                <button class="btn btn-success add-params-btn rounded">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="json-tab">
+                    <div class="card border p-3" style="border-top: 0 !important;">
+                        <textarea class="form-control" id="requestJsonText" rows="5"
+                            placeholder="Enter your JSON"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-2 md-2">
+            <h3>Response</h3>
+            <pre
+                class="responsePre language-javascript rounded"><code id="responsePrism" class=" language-javascript">Your response will appear here.</code></pre>
+        </div>
+    </div>
+
+
+    <div class="code-with-love bg-dark">
+        Code with <i class="fa fa-heart"></i> by <a href="https://instagram.com/sahilverma.dev" target="_blank">Sahil
+            Verma</a>
+    </div>
+    <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/prism.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
