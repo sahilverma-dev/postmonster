@@ -21,7 +21,8 @@
   width: auto;
 }
 
-.key-params input {
+.key-params input,
+.header-params input {
   margin-right: 10px;
 }
 
@@ -45,7 +46,7 @@
   width: 40px;
 }
 
-.delete-params-btn i {
+i.fa.fa-trash {
   pointer-events: none;
 }
 
@@ -103,7 +104,7 @@
 }
 
 .responsePre {
-  max-height: 500px;
+  height: calc(100vh - 360px);
   overflow: scroll;
 }
 
